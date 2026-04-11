@@ -36,10 +36,16 @@
             <div class="container">
                 <span class="badge">Programming Analyst Report</span>
                 <h1><span class="text-gradient">High error rate</span> in software documentation</h1>
-                <p>.............................</p>
-                <div style="display: flex; gap: 1rem; justify-content: center;">
-                    <a href="#strategy" class="logo" style="background: var(--primary); color: white; padding: 0.8rem 1.5rem; border-radius: var(--radius-md); text-decoration: none;">View Analysis</a>
-                    <a href="#solutions" style="padding: 0.8rem 1.5rem; border: 1px solid var(--border); border-radius: var(--radius-md); text-decoration: none; color: var(--primary); font-weight: 600;">Explore Solutions</a>
+                <p>A comprehensive analysis of the documentation gap in agile environments and its impact on technical debt, developer experience, and operational efficiency.</p>
+                <div class="hero-buttons">
+                    <a href="#strategy" class="hero-btn hero-btn-primary">
+                        <i class="fas fa-chart-line"></i>
+                        View Analysis
+                    </a>
+                    <a href="#solutions" class="hero-btn hero-btn-secondary">
+                        <i class="fas fa-lightbulb"></i>
+                        Explore Solutions
+                    </a>
                 </div>
             </div>
         </section>
@@ -51,13 +57,17 @@
                     <div class="content">
                         <h4>Context</h4>
                         <h2>The Documentation Gap in Agile Environments</h2>
-                        <p>In the modern .........</p>
-                        <p>This creates <strong>Technical Debt</strong>, .......</p>
+                        <p>In the modern technology industry, fast-paced development cycles often lead to a critical disconnect. As developers push code daily to meet deadlines, documentation updates are frequently sidelined.</p>
+                        <p>This creates <strong>Technical Debt</strong>, where the source code and the instructional manuals fall out of sync. This "desynchronization" becomes a major operational bottleneck in professional environments.</p>
                     </div>
                     <div class="visual">
-                        <div class="card card-blue" style="background: var(--bg-soft); border-style: dashed;">
-                            <h3 style="color: var(--accent);"><i class="fas fa-triangle-exclamation"></i> Operational Risk</h3>
-                            <p style="font-size: 0.9rem; margin-bottom: 0;">Inaccurate ......</p>
+                        <div class="card card-blue">
+                            <div class="risk-badge">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span>High Priority</span>
+                            </div>
+                            <h3><i class="fas fa-shield-halved"></i> Operational Risk</h3>
+                            <p>Inaccurate documentation is more than an inconvenience; it is a financial and security risk for modern software organizations.</p>
                         </div>
                     </div>
                 </div>
@@ -71,19 +81,28 @@
                 <h2>Impact on Teams & Users</h2>
                 <div class="grid-3">
                     <article class="card">
-                        <div class="icon-box"><i class="fas fa-user-graduate"></i></div>
+                        <div class="card-header">
+                            <div class="icon-box"><i class="fas fa-user-graduate"></i></div>
+                            <span class="card-tag">Onboarding</span>
+                        </div>
                         <h3>Junior Developers</h3>
-                        <p>New hires ......."</p>
+                        <p>New hires face extended learning curves. Without reliable documentation, they cannot understand the system's architecture independently, leading to a loss of productivity and a "knowledge silo" effect.</p>
                     </article>
                     <article class="card">
-                        <div class="icon-box"><i class="fas fa-microchip"></i></div>
+                        <div class="card-header">
+                            <div class="icon-box"><i class="fas fa-server"></i></div>
+                            <span class="card-tag">Operations</span>
+                        </div>
                         <h3>Support & DevOps</h3>
-                        <p>Higher MTTR .......</p>
+                        <p>These teams face a higher MTTR (Mean Time to Repair) because the reference manuals do not match the production environment. This increases operational stress and leads to inefficient troubleshooting.</p>
                     </article>
                     <article class="card">
-                        <div class="icon-box"><i class="fas fa-users-viewfinder"></i></div>
+                        <div class="card-header">
+                            <div class="icon-box"><i class="fas fa-users-gear"></i></div>
+                            <span class="card-tag">Customer</span>
+                        </div>
                         <h3>End Users</h3>
-                        <p>Discrepancies ........</p>
+                        <p>Discrepancies between the software behavior and the manual lead to a poor User Experience (UX), increasing churn rates and damaging brand credibility.</p>
                     </article>
                 </div>
             </div>
@@ -95,20 +114,32 @@
                 <div style="text-align: center; max-width: 700px; margin: 0 auto 4rem;">
                     <h4>Risk Assessment</h4>
                     <h2>Why is it critical?</h2>
-                    <p>Inaccurate ........</p>
+                    <p>Inaccurate documentation is more than an inconvenience; it is a financial and security risk that affects the entire organization's operational efficiency.</p>
                 </div>
                 <div class="grid-3">
-                    <div style="padding: 1rem;">
-                        <h3 style="color: #ef4444;"><i class="fas fa-clock"></i> Time-to-Value</h3>
-                        <p>Developers ......</p>
+                    <div class="risk-card risk-critical">
+                        <div class="risk-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Time-to-Value</h3>
+                        <p>Developers waste significant time performing "software archaeology" to understand undocumented logic, reducing overall productivity and delaying feature delivery.</p>
+                        <div class="risk-level">Critical</div>
                     </div>
-                    <div style="padding: 1rem;">
-                        <h3 style="color: #f59e0b;"><i class="fas fa-lock"></i> Security</h3>
-                        <p>Outdated deployment .......</p>
+                    <div class="risk-card risk-high">
+                        <div class="risk-icon">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <h3>Security</h3>
+                        <p>Outdated deployment guides or API instructions can lead to misconfigurations and security vulnerabilities, putting systems and data at risk.</p>
+                        <div class="risk-level">High</div>
                     </div>
-                    <div style="padding: 1rem;">
-                        <h3 style="color: #6366f1;"><i class="fas fa-face-frown"></i> Team Morale</h3>
-                        <p>Working .......</p>
+                    <div class="risk-card risk-medium">
+                        <div class="risk-icon">
+                            <i class="fas fa-heart-pulse"></i>
+                        </div>
+                        <h3>Team Morale</h3>
+                        <p>Working with unreliable information increases developer frustration and burnout, leading to higher turnover rates and loss of institutional knowledge.</p>
+                        <div class="risk-level">Medium</div>
                     </div>
                 </div>
             </div>
@@ -121,19 +152,19 @@
                 <h2>Strategic Implementation</h2>
                 <div class="grid-3">
                     <div class="card">
-                        <span class="badge" style="background: #dcfce7; color: #166534;">Methodology</span>
-                        <h3>Docs-as-Code</h3>
-                        <p>Treat documentation .........</p>
+                        <span class="badge badge-methodology"><i class="fas fa-code-branch"></i> Methodology</span>
+                        <h3><i class="fas fa-laptop-code"></i> Docs-as-Code</h3>
+                        <p>Treat documentation with the same rigor as source code. By using Git repositories and Markdown, documentation updates become part of the Pull Request process. If the code changes, the doc must change before merging.</p>
                     </div>
                     <div class="card">
-                        <span class="badge" style="background: #e0f2fe; color: #075985;">CI/CD</span>
-                        <h3>Automated Validation</h3>
-                        <p>Implement automated .........</p>
+                        <span class="badge badge-cicd"><i class="fas fa-robot"></i> CI/CD</span>
+                        <h3><i class="fas fa-check-double"></i> Automated Validation</h3>
+                        <p>Implement automated tests to verify code snippets within the documentation. This ensures that examples provided to users are always functional and up-to-date.</p>
                     </div>
                     <div class="card">
-                        <span class="badge" style="background: #f3e8ff; color: #6b21a8;">Operations</span>
-                        <h3>Refactoring Sprints</h3>
-                        <p>Dedicate time every ..........</p>
+                        <span class="badge badge-ops"><i class="fas fa-calendar-check"></i> Operations</span>
+                        <h3><i class="fas fa-broom"></i> Refactoring Sprints</h3>
+                        <p>Dedicate specific time every quarter for a "Knowledge Cleanup." This prevents the accumulation of obsolete information and aligns the manuals with the current system architecture.</p>
                     </div>
                 </div>
             </div>
@@ -148,20 +179,20 @@
                     
                     <div class="analysis-item">
                         <h4>1. What problem did I choose and why?</h4>
-                        <p>I chose <strong>Documentation Inconsistency</strong>...........</p>
+                        <p>I chose <strong>Documentation Inconsistency</strong>. I believe this is a "silent killer" of productivity. While many recognize it as a problem, it is rarely prioritized until a critical failure occurs. Fixing this is essential for long-term scalability.</p>
                     </div>
 
                     <div class="analysis-item">
                         <h4>2. What facts influenced my decision?</h4>
-                        <p>Research shows that developers spend up to <strong>20% of their time</strong> ..........</p>
+                        <p>Research shows that developers spend up to <strong>20% of their time</strong> simply searching for information or deciphering undocumented code. Reducing this friction is the most cost-effective way to increase a team's output.</p>
                     </div>
 
                     <div class="analysis-item">
                         <h4>3. Possible Solutions & Stack</h4>
                         <ul class="check-list">
-                            <li><i class="fas fa-circle-check"></i> <strong>Static Analysis Tools:</strong> .........</li>
-                            <li><i class="fas fa-circle-check"></i> <strong>PR-Driven Documentation:</strong> ..........</li>
-                            <li><i class="fas fa-circle-check"></i> <strong>Standardized Templates:</strong> ..........</li>
+                            <li><i class="fas fa-circle-check"></i> <strong>Static Analysis Tools:</strong> Use linters to check documentation quality.</li>
+                            <li><i class="fas fa-circle-check"></i> <strong>PR-Driven Documentation:</strong> Making documentation a mandatory part of the Definition of Done (DoD).</li>
+                            <li><i class="fas fa-circle-check"></i> <strong>Standardized Templates:</strong> Using tools like OpenAPI/Swagger for automatic API documentation to ensure consistency.</li>
                         </ul>
                     </div>
                 </div>
@@ -175,14 +206,35 @@
                     <div>
                         <h4>Recommendations</h4>
                         <h2>How to motivate the team?</h2>
-                        <p>Integrate documentation into the <strong>Performance Metrics</strong>. .........</p>
+                        <p>Integrate documentation into the <strong>Performance Metrics</strong>. When "high-quality documentation" is a requirement for a task to be considered "Done," the team starts to see it as a core part of their engineering identity rather than an afterthought.</p>
                     </div>
-                    <div class="card" style="background: var(--bg-soft);">
-                        <h3>Best-in-Class Tools</h3>
+                    <div class="card tools-card">
+                        <div class="tools-header">
+                            <h3><i class="fas fa-toolbox"></i> Best-in-Class Tools</h3>
+                            <span class="tools-badge">Free & Open Source</span>
+                        </div>
                         <ul class="check-list">
-                            <li><i class="fas fa-rocket"></i> <strong>Docusaurus / MkDocs:</strong> Professional static sites.</li>
-                            <li><i class="fas fa-terminal"></i> <strong>Swagger (OpenAPI):</strong> API Auto-docs.</li>
-                            <li><i class="fas fa-project-diagram"></i> <strong>Mermaid.js:</strong> Architecture as Code.</li>
+                            <li>
+                                <div class="tool-icon"><i class="fas fa-rocket"></i></div>
+                                <div class="tool-info">
+                                    <strong>Docusaurus / MkDocs</strong>
+                                    <span>Excellent for building professional documentation sites from Markdown.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tool-icon"><i class="fas fa-terminal"></i></div>
+                                <div class="tool-info">
+                                    <strong>Swagger (OpenAPI)</strong>
+                                    <span>The industry standard for documenting REST APIs automatically.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tool-icon"><i class="fas fa-project-diagram"></i></div>
+                                <div class="tool-info">
+                                    <strong>Mermaid.js</strong>
+                                    <span>Allows developers to create architecture diagrams directly within code.</span>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -191,11 +243,37 @@
     </main>
 
     <footer class="main-footer">
-        <div class="container footer-wrapper">
-            <div>&copy; 2026 DocOps Analysis System. All rights reserved.</div>
-            <div style="display: flex; gap: 2rem;">
-                <a href="#" style="color: var(--text-muted); text-decoration: none;">GitHub</a>
-                <a href="#" style="color: var(--text-muted); text-decoration: none;">Internal Docs</a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-file-shield"></i>
+                        DocOps <span>Analysis</span>
+                    </div>
+                    <p>Professional documentation analysis and optimization for modern software development teams.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#context">Context</a></li>
+                            <li><a href="#impact">Impact</a></li>
+                            <li><a href="#solutions">Solutions</a></li>
+                            <li><a href="#strategy">Strategy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
+                            <li><a href="#"><i class="fas fa-book"></i> Internal Docs</a></li>
+                            <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DocOps Analysis System. All rights reserved. | Programming Analyst Report</p>
             </div>
         </div>
     </footer>
