@@ -59,6 +59,10 @@
                         <h2>The Documentation Gap in Agile Environments</h2>
                         <p>In the modern technology industry, fast-paced development cycles often lead to a critical disconnect. As developers push code daily to meet deadlines, documentation updates are frequently sidelined.</p>
                         <p>This creates <strong>Technical Debt</strong>, where the source code and the instructional manuals fall out of sync. This "desynchronization" becomes a major operational bottleneck in professional environments.</p>
+                        <button class="explain-btn" data-section="context">
+                            <i class="fas fa-code"></i>
+                            Analyze This Section
+                        </button>
                     </div>
                     <div class="visual">
                         <div class="card card-blue">
@@ -105,42 +109,11 @@
                         <p>Discrepancies between the software behavior and the manual lead to a poor User Experience (UX), increasing churn rates and damaging brand credibility.</p>
                     </article>
                 </div>
-            </div>
-        </section>
-
-        <!-- CRITICALITY SECTION -->
-        <section class="section">
-            <div class="container">
-                <div style="text-align: center; max-width: 700px; margin: 0 auto 4rem;">
-                    <h4>Risk Assessment</h4>
-                    <h2>Why is it critical?</h2>
-                    <p>Inaccurate documentation is more than an inconvenience; it is a financial and security risk that affects the entire organization's operational efficiency.</p>
-                </div>
-                <div class="grid-3">
-                    <div class="risk-card risk-critical">
-                        <div class="risk-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <h3>Time-to-Value</h3>
-                        <p>Developers waste significant time performing "software archaeology" to understand undocumented logic, reducing overall productivity and delaying feature delivery.</p>
-                        <div class="risk-level">Critical</div>
-                    </div>
-                    <div class="risk-card risk-high">
-                        <div class="risk-icon">
-                            <i class="fas fa-shield-halved"></i>
-                        </div>
-                        <h3>Security</h3>
-                        <p>Outdated deployment guides or API instructions can lead to misconfigurations and security vulnerabilities, putting systems and data at risk.</p>
-                        <div class="risk-level">High</div>
-                    </div>
-                    <div class="risk-card risk-medium">
-                        <div class="risk-icon">
-                            <i class="fas fa-heart-pulse"></i>
-                        </div>
-                        <h3>Team Morale</h3>
-                        <p>Working with unreliable information increases developer frustration and burnout, leading to higher turnover rates and loss of institutional knowledge.</p>
-                        <div class="risk-level">Medium</div>
-                    </div>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <button class="explain-btn" data-section="impact">
+                        <i class="fas fa-code"></i>
+                        Analyze This Section
+                    </button>
                 </div>
             </div>
         </section>
@@ -167,6 +140,12 @@
                         <p>Dedicate specific time every quarter for a "Knowledge Cleanup." This prevents the accumulation of obsolete information and aligns the manuals with the current system architecture.</p>
                     </div>
                 </div>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <button class="explain-btn" data-section="solutions">
+                        <i class="fas fa-code"></i>
+                        Analyze This Section
+                    </button>
+                </div>
             </div>
         </section>
 
@@ -176,7 +155,7 @@
                 <div class="analysis-container">
                     <h4>Internal Report</h4>
                     <h2>Analysis & Strategy</h2>
-                    
+
                     <div class="analysis-item">
                         <h4>1. What problem did I choose and why?</h4>
                         <p>I chose <strong>Documentation Inconsistency</strong>. I believe this is a "silent killer" of productivity. While many recognize it as a problem, it is rarely prioritized until a critical failure occurs. Fixing this is essential for long-term scalability.</p>
@@ -195,47 +174,12 @@
                             <li><i class="fas fa-circle-check"></i> <strong>Standardized Templates:</strong> Using tools like OpenAPI/Swagger for automatic API documentation to ensure consistency.</li>
                         </ul>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- RECOMMENDATIONS SECTION -->
-        <section class="section">
-            <div class="container">
-                <div class="grid-2">
-                    <div>
-                        <h4>Recommendations</h4>
-                        <h2>How to motivate the team?</h2>
-                        <p>Integrate documentation into the <strong>Performance Metrics</strong>. When "high-quality documentation" is a requirement for a task to be considered "Done," the team starts to see it as a core part of their engineering identity rather than an afterthought.</p>
-                    </div>
-                    <div class="card tools-card">
-                        <div class="tools-header">
-                            <h3><i class="fas fa-toolbox"></i> Best-in-Class Tools</h3>
-                            <span class="tools-badge">Free & Open Source</span>
-                        </div>
-                        <ul class="check-list">
-                            <li>
-                                <div class="tool-icon"><i class="fas fa-rocket"></i></div>
-                                <div class="tool-info">
-                                    <strong>Docusaurus / MkDocs</strong>
-                                    <span>Excellent for building professional documentation sites from Markdown.</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="tool-icon"><i class="fas fa-terminal"></i></div>
-                                <div class="tool-info">
-                                    <strong>Swagger (OpenAPI)</strong>
-                                    <span>The industry standard for documenting REST APIs automatically.</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="tool-icon"><i class="fas fa-project-diagram"></i></div>
-                                <div class="tool-info">
-                                    <strong>Mermaid.js</strong>
-                                    <span>Allows developers to create architecture diagrams directly within code.</span>
-                                </div>
-                            </li>
-                        </ul>
+                    <div style="text-align: center; margin-top: 2rem; position: relative; z-index: 1;">
+                        <button class="explain-btn" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.3) 0%, rgba(79, 70, 229, 0.2) 100%); border-color: rgba(148, 163, 184, 0.3);" data-section="strategy">
+                            <i class="fas fa-code"></i>
+                            Analyze This Section
+                        </button>
                     </div>
                 </div>
             </div>
@@ -278,6 +222,172 @@
         </div>
     </footer>
 
+    <!-- EXPLANATION MODAL -->
+    <div id="explain-modal" class="explain-modal">
+        <div class="explain-modal-content">
+            <div class="explain-modal-header">
+                <h3><i class="fas fa-code"></i> Code Analysis</h3>
+                <button class="modal-close" id="close-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="explain-modal-body">
+                <div class="explain-section" id="explain-context">
+                    <h4><i class="fas fa-layer-group"></i> HTML Structure</h4>
+                    <div class="code-block">
+                        <pre><code><span class="tag">&lt;section</span> <span class="attr">id</span>=<span class="value">"context"</span> <span class="attr">class</span>=<span class="value">"section"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="value">"container"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="value">"grid-2"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="value">"content"</span><span class="tag">&gt;</span>
+                <span class="comment">&lt;!-- Text content goes here --&gt;</span>
+            <span class="tag">&lt;/div&gt;</span>
+            <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="value">"visual"</span><span class="tag">&gt;</span>
+                <span class="comment">&lt;!-- Card component --&gt;</span>
+            <span class="tag">&lt;/div&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/section&gt;</span></code></pre>
+                    </div>
+                    <h4><i class="fas fa-info-circle"></i> Explanation</h4>
+                    <div class="explanation-text">
+                        <p><strong>Section Structure:</strong> Uses a semantic `&lt;section&gt;` element with an ID for navigation. The `section` class applies consistent spacing and styling.</p>
+                        <p><strong>Grid System:</strong> `grid-2` creates a 2-column layout using CSS Grid, separating content from visual elements.</p>
+                        <p><strong>Container:</strong> Centers content with maximum width and provides padding for responsive design.</p>
+                    </div>
+                    <h4><i class="fas fa-paint-brush"></i> Key CSS</h4>
+                    <div class="code-block">
+                        <pre><code><span class="tag">.grid-2</span> {
+    <span class="attr">display</span>: grid;
+    <span class="attr">grid-template-columns</span>: <span class="value">1fr 1fr</span>;
+    <span class="attr">gap</span>: <span class="value">5.5rem</span>;
+}
+<span class="tag">.card</span> {
+    <span class="attr">background</span>: <span class="value">#ffffff</span>;
+    <span class="attr">border-radius</span>: <span class="value">20px</span>;
+    <span class="attr">box-shadow</span>: <span class="value">0 2px 12px rgba(0,0,0,0.05)</span>;
+}</code></pre>
+                    </div>
+                    <div class="explanation-text">
+                        <p><strong>Grid-2:</strong> 2-column layout with gap.</p>
+                        <p><strong>Card:</strong> White background, rounded corners, shadow.</p>
+                    </div>
+                </div>
+
+                <!-- STAKEHOLDERS SECTION -->
+                <div class="explain-section" id="explain-impact">
+                    <h4><i class="fas fa-users"></i> HTML Structure</h4>
+                    <div class="code-block">
+                        <pre><code><span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="value">"grid-3"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;article</span> <span class="attr">class</span>=<span class="value">"card"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="value">"icon-box"</span><span class="tag">&gt;</span>...<span class="tag">&lt;/div&gt;</span>
+        <span class="tag">&lt;h3&gt;</span>Title<span class="tag">&lt;/h3&gt;</span>
+        <span class="tag">&lt;p&gt;</span>Content<span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;/article&gt;</span>
+<span class="tag">&lt;/div&gt;</span></code></pre>
+                    </div>
+                    <h4><i class="fas fa-info-circle"></i> Explanation</h4>
+                    <div class="explanation-text">
+                        <p><strong>Grid-3:</strong> Creates a 3-column layout for the stakeholder cards.</p>
+                        <p><strong>Card Component:</strong> Each stakeholder uses an article with card styling for consistency.</p>
+                    </div>
+                    <h4><i class="fas fa-paint-brush"></i> Key CSS</h4>
+                    <div class="code-block">
+                        <pre><code><span class="tag">.grid-3</span> {
+    <span class="attr">display</span>: grid;
+    <span class="attr">grid-template-columns</span>: <span class="value">repeat(3, 1fr)</span>;
+    <span class="attr">gap</span>: <span class="value">2rem</span>;
+}
+<span class="tag">.icon-box</span> {
+    <span class="attr">width</span>: <span class="value">70px</span>;
+    <span class="attr">height</span>: <span class="value">70px</span>;
+    <span class="attr">background</span>: <span class="value">rgba(37,99,235,0.12)</span>;
+    <span class="attr">color</span>: <span class="value">#2563eb</span>;
+    <span class="attr">border-radius</span>: <span class="value">12px</span>;
+}</code></pre>
+                    </div>
+                    <div class="explanation-text">
+                        <p><strong>Grid-3:</strong> 3 equal columns.</p>
+                        <p><strong>Icon-Box:</strong> Blue gradient background for icons.</p>
+                    </div>
+                </div>
+
+                <!-- SOLUTIONS SECTION -->
+                <div class="explain-section" id="explain-solutions">
+                    <h4><i class="fas fa-lightbulb"></i> HTML Structure</h4>
+                    <div class="code-block">
+                        <pre><code><span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="value">"card"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;span</span> <span class="attr">class</span>=<span class="value">"badge badge-methodology"</span><span class="tag">&gt;</span>...<span class="tag">&lt;/span&gt;</span>
+    <span class="tag">&lt;h3&gt;</span>Docs-as-Code<span class="tag">&lt;/h3&gt;</span>
+    <span class="tag">&lt;p&gt;</span>Description...<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/div&gt;</span></code></pre>
+                    </div>
+                    <h4><i class="fas fa-info-circle"></i> Explanation</h4>
+                    <div class="explanation-text">
+                        <p><strong>Badges:</strong> Colored labels (Methodology, CI/CD, Operations) categorize each solution.</p>
+                        <p><strong>Cards:</strong> Each solution in a separate card with consistent styling.</p>
+                    </div>
+                    <h4><i class="fas fa-paint-brush"></i> Key CSS</h4>
+                    <div class="code-block">
+                        <pre><code><span class="tag">.badge-methodology</span> {
+    <span class="attr">background</span>: <span class="value">rgba(22,163,74,0.12)</span>;
+    <span class="attr">color</span>: <span class="value">#15803d</span>;
+    <span class="attr">border</span>: <span class="value">1px solid rgba(22,163,74,0.2)</span>;
+}
+<span class="tag">.badge-cicd</span> {
+    <span class="attr">background</span>: <span class="value">rgba(14,165,233,0.12)</span>;
+    <span class="attr">color</span>: <span class="value">#0369a1</span>;
+}
+<span class="tag">.badge-ops</span> {
+    <span class="attr">background</span>: <span class="value">rgba(168,85,247,0.12)</span>;
+    <span class="attr">color</span>: <span class="value">#7c3aed</span>;
+}</code></pre>
+                    </div>
+                    <div class="explanation-text">
+                        <p><strong>Badges:</strong> Green (Methodology), Blue (CI/CD), Purple (Operations).</p>
+                        <p><strong>Style:</strong> Subtle gradients with borders.</p>
+                    </div>
+                </div>
+
+                <!-- STRATEGY SECTION -->
+                <div class="explain-section" id="explain-strategy">
+                    <h4><i class="fas fa-chart-line"></i> HTML Structure</h4>
+                    <div class="code-block">
+                        <pre><code><span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="value">"analysis-container"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="value">"analysis-item"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;h4&gt;</span>1. Question?<span class="tag">&lt;/h4&gt;</span>
+        <span class="tag">&lt;p&gt;</span>Answer...<span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;ul</span> <span class="attr">class</span>=<span class="value">"check-list"</span><span class="tag">&gt;</span>...<span class="tag">&lt;/ul&gt;</span>
+<span class="tag">&lt;/div&gt;</span></code></pre>
+                    </div>
+                    <h4><i class="fas fa-info-circle"></i> Explanation</h4>
+                    <div class="explanation-text">
+                        <p><strong>Analysis Container:</strong> Dark background container for the internal report.</p>
+                        <p><strong>Analysis Items:</strong> Each question-answer pair in a styled block.</p>
+                        <p><strong>Check List:</strong> Styled list for solutions with checkmark icons.</p>
+                    </div>
+                    <h4><i class="fas fa-paint-brush"></i> Key CSS</h4>
+                    <div class="code-block">
+                        <pre><code><span class="tag">.analysis-container</span> {
+    <span class="attr">background</span>: <span class="value">linear-gradient(145deg, #0f172a, #1e293b)</span>;
+    <span class="attr">color</span>: <span class="value">#ffffff</span>;
+    <span class="attr">padding</span>: <span class="value">5rem 4rem</span>;
+    <span class="attr">border-radius</span>: <span class="value">20px</span>;
+}
+<span class="tag">.analysis-item</span> {
+    <span class="attr">border-left</span>: <span class="value">5px solid rgba(99,102,241,0.5)</span>;
+    <span class="attr">padding-left</span>: <span class="value">2.5rem</span>;
+}</code></pre>
+                    </div>
+                    <div class="explanation-text">
+                        <p><strong>Analysis Container:</strong> Dark gradient background, white text, rounded.</p>
+                        <p><strong>Analysis Item:</strong> Left border accent for visual separation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -290,6 +400,50 @@
                     });
                 }
             });
+        });
+
+        // Explanation Modal Functionality
+        const explainBtns = document.querySelectorAll('.explain-btn');
+        const modal = document.getElementById('explain-modal');
+        const closeModal = document.getElementById('close-modal');
+        const explainSections = document.querySelectorAll('.explain-section');
+
+        explainBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const sectionName = this.getAttribute('data-section');
+                const targetSection = document.getElementById(`explain-${sectionName}`);
+
+                // Hide all sections
+                explainSections.forEach(section => {
+                    section.style.display = 'none';
+                });
+
+                // Show target section
+                if (targetSection) {
+                    targetSection.style.display = 'block';
+                }
+
+                // Show modal
+                modal.style.display = 'flex';
+            });
+        });
+
+        closeModal.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+
+        // Close on outside click
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.style.display === 'flex') {
+                modal.style.display = 'none';
+            }
         });
     </script>
 </body>
